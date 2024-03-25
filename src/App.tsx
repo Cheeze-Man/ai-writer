@@ -1,5 +1,15 @@
+import { callGPT } from "./api/gpt";
+
 function App() {
-  return <></>;
+  const handleClickAPICall = async () => {
+    await callGPT();
+  };
+
+  return (
+    <>
+      <button onClick={handleClickAPICall}>GPT API Call</button>
+    </>
+  );
 }
 
 export default App;
