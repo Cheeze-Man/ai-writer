@@ -63,7 +63,6 @@ export const callGPT = async ({ prompt }: GPTtypes) => {
   });
 
   const responseData = await response.json();
-  console.log(responseData);
 
   const message = responseData.choices[0].message.content;
 
