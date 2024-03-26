@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { callGPT } from "./api/gpt";
 import PromptInput from "./components/PromptInput";
+import styled from "styled-components";
+import logo from "./assets/logo.png";
+import MemoirDisplay from "./components/MemoirDisplay";
 
 const dummyData = JSON.parse(
   `{ "title": "개발 고민과 해결",
@@ -30,9 +33,9 @@ function App() {
     }
   };
 
-  const handleClickAPICallButton = () => {
-    handleClickAPICall("");
-  };
+  // const handleClickAPICallButton = () => {
+  //   handleClickAPICall("");
+  // };
 
   const handleSubmit = (userInput: string) => {
     handleClickAPICall(userInput);
@@ -41,15 +44,39 @@ function App() {
   console.log(">>data", data);
 
   return (
-    <>
+    <AppContainer>
+      <AppTitle>
+        chat GPT 일기장, Memoir AI <img width={"300rem"} src={logo} />
+      </AppTitle>
       <PromptInput isLoading={isLoading} onSubmit={handleSubmit} />
-      <button onClick={handleClickAPICallButton}>GPT API Call</button>
-      <div>title: {data?.title}</div>
-      <div>analysis: {data?.analysis}</div>
-      <div>emotional_content: {data?.emotional_content}</div>
-      <div>emotional_result: {data?.emotional_result}</div>
-    </>
+      <MemoirDisplay data={data} isLoading={isLoading} />
+    </AppContainer>
   );
 }
 
 export default App;
+
+const AppContainer = styled.div`
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+`;
+
+const AppTitle = styled.div`
+  width: 100%;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  letter-spacing: -0.75px;
+  color: #3f3f46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+`;
