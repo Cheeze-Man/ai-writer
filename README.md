@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+## Meomori AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>
+  <img width="300" src='https://github.com/Cheeze-Man/ai-writer/assets/124056699/c2011bf9-6dc6-4cf5-aacf-99bbef82573a'/>
+</p>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> 개발 기간 - 2024.03 <br/>
+> Link - None
 
-## Expanding the ESLint configuration
+<br/><br/>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## 팀원 소개
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+|프론트엔드|
+|:--:|
+|<img width="150" src="https://github.com/Cheeze-Man/ouroom/assets/124056699/480677bb-826a-477b-8801-aab1934c8e22">|
+|[박동철](https://github.com/Cheeze-Man)|
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<br/><br/>
+
+## 프로젝트 소개
+이 프로젝트는 OpenAI API를 활용하여 개발된 AI 회고 작성 서비스입니다. <br/>
+사용자가 자신이 경험한 일상의 사건, 그 안에서 느낀 감정 및 고민 등을 입력하면, <br/>
+AI가 이를 분석하여 하루를 간단하게 정리하고, 몇 가지 조언을 제공합니다. <br/>
+또한, Unsplash를 통해 상황에 맞는 이미지도 랜덤으로 제공됩니다. <br/>
+이 서비스를 통해 사용자는 일상 속에서의 경험을 AI와 함께 공유하고,  <br/>
+심리적인 통찰력과 시각적인 자극을 얻을 수 있습니다.
+
+<br/><br/>
+
+## 기술 스택
+
+### 환경
+<div display='flex'>
+  <img src="https://img.shields.io/badge/vscode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+</div>
+
+### 개발
+<div display='flex'>
+  <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
+</div>
+
+### 패키지 매니저 및 배포
+<div display='flex'>
+  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+  <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+</div>
+
+### 기타 라이브러리
+- next-auth
+- next-themes
+- react-icons
+- react-spinners
+- react-multi-carousel
+- timeago.js
